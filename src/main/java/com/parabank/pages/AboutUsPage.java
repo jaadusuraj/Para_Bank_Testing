@@ -1,4 +1,6 @@
 package com.parabank.pages;
 
-public class AboutUsPage {
+import com.parabank.base.TestBase;
+
+public class AboutUsPage extends TestBase {
 }

@@ -1,4 +1,11 @@
 package com.parabank.pages;
 
-public class LocationsPage {
+import com.parabank.base.TestBase;
+
+public class LocationsPage extends TestBase {
+
+    public LocationsPage()
+    {
+        super();
+    }
 }

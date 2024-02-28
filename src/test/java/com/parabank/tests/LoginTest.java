@@ -22,17 +22,23 @@ public class LoginTest extends TestBase {
         loginPage = new LoginPage();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 2, groups = "test")
     public void verifyingApplicationTitle()
     {
         String title = loginPage.verifyLoginPageTitle();
         Assert.assertEquals(title, "ParaBank | Welcome | Online Banking");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void loginIntoApplication()
     {
         loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+    }
+
+    @Test(priority = 2)
+    public void check()
+    {
+        Assert.assertEquals(1,1);
     }
 
     @AfterMethod

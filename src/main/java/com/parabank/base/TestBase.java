@@ -21,7 +21,7 @@ public class TestBase {
         try {
 
             prop = new Properties();
-            FileInputStream fip = new FileInputStream("C:\\Users\\HP\\IdeaProjects\\Para_Bank_Testing\\src\\main\\java\\com\\parabank\\config\\config.properties");
+            FileInputStream fip = new FileInputStream("src/config.properties");
             prop.load(fip);
         }catch (FileNotFoundException e)
         {
@@ -38,7 +38,7 @@ public class TestBase {
         String browserName = prop.getProperty("browser");
         if(browserName.equals("chrome"))
         {
-            System.setProperty("webdriver.chrome.driver","C:\\Users\\HP\\IdeaProjects\\Para_Bank_Testing\\src\\main\\java\\com\\parabank\\executables\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver","src/main/java/com/parabank/executables/chromedriver.exe");
             driver = new ChromeDriver();
         } else if (browserName.equals("FF")) {
 

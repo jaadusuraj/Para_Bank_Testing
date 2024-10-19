@@ -42,7 +42,7 @@ public class TestBase {
             driver = new ChromeDriver();
         } else if (browserName.equals("FF")) {
 
-            System.setProperty("webdriver.gecko.driver","C:\\Users\\HP\\IdeaProjects\\Para_Bank_Testing\\src\\main\\java\\com\\parabank\\executables\\geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver","src/main/java/com/parabank/executables/geckodriver.exe");
             driver = new FirefoxDriver();
         }
 
